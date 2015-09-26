@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/ejholmes/active_admin_editor'
   s.summary     = 'Rich text editor for Active Admin using wysihtml5.'
   s.description = s.summary
-
   s.files = Dir['{app,config,db,lib,vendor}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['spec/**/*']
 
@@ -30,6 +29,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'poltergeist', '~> 1.0.2'
   s.add_development_dependency 'faker'
 
+  s.add_runtime_dependency 'activeadmin', '~> 0.4.3', '>= 0.4.0'
+  
   # JavaScript
   s.add_development_dependency 'konacha', '~> 2.1.0'
   s.add_development_dependency 'chai-jquery-rails'
